@@ -1,0 +1,2 @@
+Milestone-1:
+Create a static resume with html css and javascript
