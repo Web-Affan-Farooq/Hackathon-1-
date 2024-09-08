@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!--____stylesheet____-->
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div class="section-small">
+        <div class="user-name"><h1>Muhammad affan</h1></div>
+        <div class="profile"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsam dolore necessitatibus quibusdam veritatis sunt, accusamus pariatur omnis minus natus dolor doloribus nesciunt vitae deserunt doloremque, delectus eum alias cum Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad explicabo provident minus dicta totam ipsa voluptatum libero voluptate laudantium nostrum accusantium soluta, iure excepturi magnam</p>
+        <h1>Contact</h1>
+        <div class="location"><i class="fa-solid fa-location-dot"></i><p class="address">R430 sector 14b shadman town 2 karachi karachi ghaziabad aghstg</p></div> <!--user can insert address within 10 words-->
+        <div class="email"><i class="fa-solid fa-envelope"></i><p class="email">affanamir903@gmail.com</p></div>
+        <div class="phone-number"><i class="fa-solid fa-phone"></i><p>098390289839084</p></div>
+        <div class="linkedin"><i class="fa-brands fa-linkedin"></i><p class="linkedin">www.linkedin.com/in/muhammad-affan-139a3a290</p></div>
+    </div>
+    <div class="section-large">
+        <div class="education">
+            <div class="head"><h1>Education:</h1></div>
+        <div class="education-1">
+            <span class="timeline"><em>feb 2020- onwards</em></span>
+            <div class="education-title">
+                <h1>Masters in computer science</h1>
+                <p>lifdhfhi ejrhjewkhur erhehrjke ejkrhejkrhjke rjerhjkehr ekjrherhnjhjhsjkfhjkshf sjhjashfhasf skjfhkjsahfjkhsf sajhfjkshfjksf safhjh</p>
+            </div>
+        </div>
+        <br>
+        <div class="education-2">
+            <span class="timeline"><em>feb 2020- onwards</em></span>
+            <div class="education-title">
+                <h1>Masters in computer science</h1>
+                <p>lifdhfhi ejrhjewkhur erhehrjke ejkrhejkrhjke rjerhjkehr ekjrherhnjhjhsjkfhjkshf sjhjashfhasf skjfhkjsahfjkhsf sajhfjkshfjksf safhjh</p>
+            </div>
+        </div>
+        </div>
+        <br>
+        <div class="skills">
+            <div class="head"><h1>My Skills</h1></div>
+            <ul class="skills-list">
+                <div>
+                    <li class="skill">Html</li>
+                </div>
+                <div>
+                    <li class="skill">Html</li>
+                </div>
+                <div>
+                    <li class="skill">Html</li>
+                </div>
+                <div>
+                    <li class="skill">Html</li>
+                </div>
+                <div>
+                    <li class="skill">Html</li>
+                </div>
+                <div>
+                    <li class="skill">Html</li>
+                </div>
+                <div>
+                    <li class="skill">Html</li>
+                </div>
+            </ul>
+        </div>
+        <br><br>
+        <div class="experience">
+            <div class="head"><h1>Job Experience</h1></div>
+            <div class="experience-1">
+                <span class="timeline"><em>feb 2020- onwards</em></span>
+                <div class="experience-title">
+                    <h1>Masters in computer science</h1>
+                    <p>lifdhfhi ejrhjewkhur erhehrjke ejkrhejkrhjke rjerhjkehr ekjrherhnjhjhsjkfhjkshf sjhjashfhasf skjfhkjsahfjkhsf sajhfjkshfjksf safhjh</p>
+                </div>
+            </div>
+            <br>
+            <div class="experience-2">
+                <span class="timeline"><em>feb 2020- onwards</em></span>
+                <div class="experience-title">
+                    <h1>Masters in computer science</h1>
+                    <p>lifdhfhi ejrhjewkhur erhehrjke ejkrhejkrhjke rjerhjkehr ekjrherhnjhjhsjkfhjkshf sjhjashfhasf skjfhkjsahfjkhsf sajhfjkshfjksf safhjh</p>
+                </div>
+            </div>
+        </div>
+        <div class="hobbies">
+            <div class="head"><h1>Hobbies</h1></div>
+            <ul class="hobbies-list">
+                <div>
+                    <li class="hobbie">Html</li>
+                </div>
+                <div>
+                    <li class="hobbie">Html</li>
+                </div>
+                <div>
+                    <li class="hobbie">Html</li>
+                </div>
+                <div>
+                    <li class="hobbie">Html</li>
+                </div>
+                <div>
+                    <li class="hobbie">Html</li>
+                </div>
+                <div>
+                    <li class="hobbie">Html</li>
+                </div>
+                <div>
+                    <li class="hobbie">Html</li>
+                </div>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
