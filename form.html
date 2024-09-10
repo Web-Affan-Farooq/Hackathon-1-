@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/home.css">
+</head>
+
+<body>
+    <div class="head">
+        <h1>Form</h1>
+        <p>Fill out required creadentials for creating cv</p>
+    </div>
+    <form action="">
+        <label for="firstname"><input type="text" name="firstname" id="firstname" placeholder="firstname"
+                required></label>
+        <label for="lastname"><input type="text" name="lastname" id="lastname" placeholder="lastname" required></label>
+        <label for="age"><input type="text" name="age" id="age" placeholder="age" required></label>
+        <label for="Son of / daughter of"><input type="text" name="FatherName" id="father-name"
+                placeholder="Father name" required></label>
+        <label for="Enter email"><input type="text" name="email" id="email" placeholder="Enter email" required></label>
+        <label for="Enter phonenumber"><input type="text" name="phonenumber" id="phonenumber"
+                placeholder="Enter phonenumber" required></label>
+        <textarea name="address" id="address" placeholder="Enter address"></textarea>
+        <div class="remaining-fields"></div>
+        <div class="buttons-container">
+            <button type="button" class="add-education">Add education</button>
+            <button type="button" class="add-experience">Add experience</button>
+            <button type="button" class="add-skills">Add skills</button>
+            <button type="button" class="add-hobbies">Add Hobbies</button>
+        </div>
+        <div>
+            <button type="button" class="create-cv">Create cv</button>
+        </div>
+    </form>
+    <script src="./js/new.js"></script>
+</body>
+
+</html>
