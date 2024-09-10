@@ -1,31 +1,34 @@
 body {
-    padding: 0;margin: 0;box-sizing: border-box;width: 100%; height: 100vh;
-    background: radial-gradient(grey 0%,black 100%);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding: 0;margin: 0;box-sizing: border-box;
+    background: white;
 }
-.section-home {
-    width: 370px;
-    height: auto;
-    padding: 30px;
-    border: 1px solid black;
-    margin: 150px auto;
-    border-radius: 20px;
-    color: white;
+input {
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    margin: auto;
+}
+textarea {
+    width: 300px;
+    padding: 10px;
+    height: 150px;
+    border-radius: 5px;
+    margin: auto;
+}
+.head {
     text-align: center;
-    background: black;
 }
-button {
-    padding: 15px 25px;
-    border-radius: 10px;
-    border: none;
-    color: white;
-    font-size: 15px;
-    background: linear-gradient(-120deg,#6932a8,#9b32a8);
+form, .remaining-fields {
+    width: 80%;
+    margin: auto;
+    border: 1px solid black;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
-@media (max-width:450px) {
-    .section-home {
-        width: 320px;
-    }
+.buttons-container {
+    width: 200px;
 }
