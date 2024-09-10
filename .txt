@@ -5,15 +5,6 @@ Milestone-2: completed:
 push your code to github
 
 Milestone-3: 
-Create the user form. The form According to prototype the form has the following information of users.
-1. firstname (does not exceed with 10characters)
-2. lastname  (does not exceed with 10characters)
-3. email  (Exact email format)
-4. linked in link 
-5. phonnumber (within limit on correct pattern)
-6. address.  (does not exceed with 20 words)
-7. education according to design (select box with possible education titles)
-8. experience  according to design 
-9. skills (enter atlest minimum 15 skills)
-10. hobbies (minimum 3/4)
-11. profile picture in the png format
+Create the user form. According to prototype the form has the following information of users.
+
+test the form and diagnose the problem by applying bundling to only skills . test each and every form field effectively 
