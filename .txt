@@ -8,3 +8,5 @@ Milestone-3:
 Create the user form. According to prototype the form has the following information of users.
 
 test the form and diagnose the problem by applying bundling to only skills . test each and every form field effectively 
+
+import form data from new.js to index.js and manipulate it to the result div
