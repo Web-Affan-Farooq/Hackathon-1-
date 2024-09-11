@@ -11,9 +11,16 @@
 <body>
     <div class="head">
         <h1>Form</h1>
-        <p>Fill out required creadentials for creating cv</p>
+        <p>Fill out the form. You're required to have the following information below.</p>
+            <p>Atleast 5 relevant skills are required</p>
+            <p>Atleast 2 educations required</p>
+            <p>Atleast 2 experiences required</p>
+            <p>Add Atleast 3 suitable hobbies</p>
+            <p>Fill out each creadential carefully</p>
+            <p>Recheck your creadentials carefully below</p>
+            <button type="button" class="show-form">Create CV</button>
     </div>
-    <form action="">
+    <form action="" class="credit-form">
         <label for="firstname"><input type="text" name="firstname" id="firstname" placeholder="firstname"
                 required></label>
         <label for="lastname"><input type="text" name="lastname" id="lastname" placeholder="lastname" required></label>
@@ -35,6 +42,15 @@
             <button type="button" class="create-cv">Create cv</button>
         </div>
     </form>
+    <div class="results">
+        <div class="name"></div>
+        <div class="age"></div> 
+        <div class="phonenumber"></div>
+        <div class="email"></div>
+        <div class="address"></div>
+        <div class="fathername"></div>
+        
+    </div>
     <script src="./js/new.js"></script>
 </body>
 
