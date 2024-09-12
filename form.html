@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style/home.css">
+    <link rel="stylesheet" href="./style/resume.css">
+    <link rel="stylesheet" href="./style/button.css">
 </head>
 
 <body>
@@ -18,40 +20,184 @@
             <p>Add Atleast 3 suitable hobbies</p>
             <p>Fill out each creadential carefully</p>
             <p>Recheck your creadentials carefully below</p>
-            <button type="button" class="show-form">Create CV</button>
+            <button type="button" class="fill-form">Create</button>
     </div>
-    <form action="" class="credit-form">
-        <label for="firstname"><input type="text" name="firstname" id="firstname" placeholder="firstname"
-                required></label>
-        <label for="lastname"><input type="text" name="lastname" id="lastname" placeholder="lastname" required></label>
-        <label for="age"><input type="text" name="age" id="age" placeholder="age" required></label>
-        <label for="Son of / daughter of"><input type="text" name="FatherName" id="father-name"
-                placeholder="Father name" required></label>
-        <label for="Enter email"><input type="text" name="email" id="email" placeholder="Enter email" required></label>
-        <label for="Enter phonenumber"><input type="text" name="phonenumber" id="phonenumber"
-                placeholder="Enter phonenumber" required></label>
-        <textarea name="address" id="address" placeholder="Enter address"></textarea>
+
+    <form action="" class="main-form"> <!--____main form____-->
+        <label for="firstname">
+            <input type="text" name="firstname" id="firstname" placeholder="firstname"required class="input-1">
+        </label>
+        <label for="lastname">
+            <input type="text" name="lastname" id="lastname" placeholder="lastname" required class="input-1">
+        </label>
+        <label for="age">
+            <input type="text" name="age" id="age" placeholder="age" required class="input-1">
+        </label>
+        <label for="Son of / daughter of">
+            <input type="text" name="FatherName" id="father-name"
+                placeholder="Father name" required class="input-1">
+        </label>
+        <label for="Enter email">
+            <input type="text" name="email" id="email" placeholder="Enter email" required class="input-1">
+        </label>
+        <label for="Enter phonenumber">
+            <input type="text" name="phonenumber" id="phonenumber"
+                placeholder="Enter phonenumber" required class="input-1">
+        </label>
+        <label for="Enter your address">
+        <textarea name="address" id="address" placeholder="Enter address" class="text-1"></textarea>
+        </label>
+        <label for="Enter profile headline">
+            <input type="text" placeholder="Enter profile headline" id="headline" class="input-1" required name="headline">
+        </label>
+        <label for="Enter professional summary">
+            <textarea name="professionalSummary" id="professional-summary" placeholder="Enter professional summary" class="text-1"></textarea>
+            </label>
         <div class="remaining-fields"></div>
         <div class="buttons-container">
             <button type="button" class="add-education">Add education</button>
             <button type="button" class="add-experience">Add experience</button>
             <button type="button" class="add-skills">Add skills</button>
             <button type="button" class="add-hobbies">Add Hobbies</button>
-        </div>
-        <div>
-            <button type="button" class="create-cv">Create cv</button>
+            <button type="button" class="preview">Preview</button>
         </div>
     </form>
-    <div class="results">
-        <div class="name"></div>
-        <div class="age"></div> 
-        <div class="phonenumber"></div>
-        <div class="email"></div>
-        <div class="address"></div>
-        <div class="fathername"></div>
-        
+
+    <!--___preview section____-->
+    <div class="preview-results">
+        <h1 id="preview-heading">Preview</h1>
+        <p>Name : <span class="name"></span></p>
+        <p>Age : <span class="age"></span></p>
+        <p>Email : <span class="email"></span></p>
+        <p>phonenumber : <span class="phonenumber"></span></p>
+        <p>Address: <span class="address"></span></p>
+        <p>fathername <span class="fathername"></span></p>
+        <div class="educations">
+            <h1>Education</h1>
+        </div>
+        <div class="experience">
+            <h1>Experience</h1>
+        </div>
+        <div class="skills">
+            <h1>Skills</h1>
+            <ul class="skills-list"></ul>
+        </div>
+        <div class="hobbies">
+            <h1>Hobbies</h1>
+            <ul class="hobbies-list"></ul>
+        </div>
+        <button type="button" class="create-cv">Create CV</button>
     </div>
+    <!--____resume____-->
+
+    <div class="resume">
+        <div class="profile"></div> <!-- profile picture-->
+        <br><br>
+        <section class="personal-info"> <!--____ personal information section ____-->
+            <h1 class="user-name">Muhammad affan</h1>
+            <h3 class="headline">Web & Mobile App developer | Developing Highly Scalable Solutions @GIAIC</h3>
+        </section>
+
+        <div class="line"> <!-- ____professional summary head ____-->
+            <h1>Summary</h1>
+        </div>
+        <section class="section-1" id="section-1"> <!-- ____professional summary ____-->
+            <p class="summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quam voluptatibus quaerat,
+                explicabo necessitatibus voluptates voluptas dolores commodi accusantium error magnam qui quo, sit
+                quibusdam adipisci blanditiis? Cumque, sapiente? Aliquam.
+                Porro vitae accusamus dolorem neque saepe ipsam id ullam velit quasi error culpa sed nesciunt et dicta
+                eum fugit, laudantium, molestias suscipit similique! Fugiat tempore ea dolorem expedita asperiores
+                beatae!</p>
+        </section>
+        <div class="line"> <!-- ____Personal information head ____-->
+            <h1>Personal Information</h1>
+        </div>
+        <section class="section-2" id="section-2">
+            <div class="info-container">Name: <span class="name">Muhammad affan</span></div>
+            <br>
+            <div class="info-container">So/do: <span class="sodo">Muhammad Farooq</span></div>
+            <br>
+            <div class="info-container">Age: <span class="age">20</span></div>
+            <br>
+            <div class="info-container">email: <span class="email">exampleaddress@gmail.com</span></div>
+            <br>
+            <div class="info-container">Tel: <span class="phonenumber">0000-0000000</span></div>
+            <br>
+            <div class="info-container">Address: <span class="address">fhjhe ejhfjehr jehrjehr erjherjhe rjehrjehr erjhewjkrhe rjehwrhewjr jhejkhw </span></div>
+        </section>
+        <div class="line">
+            <h1>Education</h1>
+        </div>
+        <section class="section-3" id="section-3">
+            <h2>Education title</h2>
+            <p>education summary Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, itaque excepturi
+                repellat autem aliquid totam eius, quasi obcaecati explicabo quos corporis aspernatur non ullam ad,
+                laudantium veritatis iste voluptas inventore!</p>
+            <p><em>from 2021 to 2928</em></p>
+            <br>
+            <h2>Education title</h2>
+            <p>education summary Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, itaque excepturi
+                repellat autem aliquid totam eius, quasi obcaecati explicabo quos corporis aspernatur non ullam ad,
+                laudantium veritatis iste voluptas inventore!</p>
+            <p><em>from 2021 to 2928</em></p>
+        </section>
+        <div class="line">
+            <h1>Experience</h1>
+        </div>
+        <section class="section-4" id="section-4">
+            <h2>Experience title</h2>
+            <p>education summary Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, itaque excepturi
+                repellat autem aliquid totam eius, quasi obcaecati explicabo quos corporis aspernatur non ullam ad,
+                laudantium veritatis iste voluptas inventore!</p>
+            <p><em>from 2021 to 2928</em></p>
+            <br>
+            <h2>Experience title</h2>
+            <p>education summary Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, itaque excepturi
+                repellat autem aliquid totam eius, quasi obcaecati explicabo quos corporis aspernatur non ullam ad,
+                laudantium veritatis iste voluptas inventore!</p>
+            <p><em>from 2021 to 2928</em></p>
+        </section>
+        <div class="line">
+            <h1>Skills</h1>
+        </div>
+        <section class="section-5" id="section-5">
+            <ul class="skills-list">
+                <li class="skill">Skilljhfshdfjhjdf </li>
+                <li class="skill">Skillkeljiojtiejrt</li>
+                <li class="skill">Skilllkerjtklrjtklr</li>
+                <li class="skill">Skillekljmtlkerjktlrt</li>
+                <li class="skill">Skillbv rfr</li>
+                <li class="skill">Skill</li>
+                <li class="skill">Skillfddgv fg</li>
+                <li class="skill">Skill dg</li>
+                <li class="skill">Skillfdgfgdf </li>
+            </ul>
+        </section>
+        <div class="line">
+            <h1>Hobbies</h1>
+        </div>
+        <section class="section-6" id="section-6">
+            <ul class="hobbies-list">
+                <li class="hobbie">Hobbie</li>
+                <li class="hobbie">Hobbie</li>
+                <li class="hobbie">Hobbie</li>
+                <li class="hobbie">Hobbie</li>
+                <li class="hobbie">Hobbie</li>
+                <li class="hobbie">Hobbie</li>
+                <li class="hobbie">Hobbie</li>
+                <li class="hobbie">Hobbie</li>
+            </ul>
+        </section>
+    </div>
+
+    <!--____Scripts____-->
     <script src="./js/new.js"></script>
+    <script src="./js/classes.js"></script>
+    <script src="./js/lists.js"></script>
+    <script src="./js/education.js"></script>
+    <script src="./js/experience.js"></script>
+    <script src="./js/skills.js"></script>
+    <script src="./js/hobbies.js"></script>
 </body>
 
 </html>
