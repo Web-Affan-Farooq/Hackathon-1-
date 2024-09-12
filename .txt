@@ -10,3 +10,13 @@ Create the user form. According to prototype the form has the following informat
 test the form and diagnose the problem by applying bundling to only skills . test each and every form field effectively 
 
 import form data from new.js to index.js and manipulate it to the result div
+
+create a basic html form that takes the following information of user
+
+firstname
+lastname
+age
+phonenumber
+email
+address
+education atleast 2
