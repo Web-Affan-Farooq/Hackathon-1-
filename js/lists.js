@@ -1,3 +1,4 @@
+let info = [];
 let educationTitles = [];  // list containing education titles
 let educationSummaries = []; // lists containing education summaries
 let educationTimestamps = []; // list containing education timestamps

@@ -107,7 +107,7 @@ previewButton.addEventListener("click", function createCv(event) {
             console.log(experience);
             experiences.push(experience);
         }
-        console.log(experiences);
+        // console.log(experiences);
     }else {
         alert("Please enter experiences thoroughly");
     }
@@ -149,8 +149,10 @@ previewButton.addEventListener("click", function createCv(event) {
         email: document.querySelector("#email").value,
         phoneNumber: document.querySelector("#phonenumber").value,
         address: document.querySelector("#address").value,
-    }
-
+        profileHeadline:document.querySelector("#headline").value,
+        professionalSummary:document.querySelector("#professional-summary").value,
+     }
+     info.push(userInfo);
  
     //console.log(userInfo); //___loging 
 
@@ -185,7 +187,7 @@ previewButton.addEventListener("click", function createCv(event) {
     }
 
     //____ selecting destination of data;
-    
+
     let name = document.querySelector(".name");
     let age = document.querySelector(".age");
     let email = document.querySelector(".email");
@@ -196,19 +198,19 @@ previewButton.addEventListener("click", function createCv(event) {
     let experienceSection = document.querySelector(".experience");
     let skillsList = document.querySelector(".skills-list");
     let hobbiesList = document.querySelector(".hobbies-list");
-    console.log(experienceSection);
+    // console.log(experienceSection);
     
     name.innerHTML += userInfo.userName;
 
-    age.innerHTML +=userInfo.age;
+    age.innerHTML += userInfo.age;
 
     email.innerHTML += userInfo.email;
 
-    phonenumber.innerHTML +=userInfo.phoneNumber;
+    phonenumber.innerHTML += userInfo.phoneNumber;
 
     address.innerHTML += userInfo.address;
 
-    fathername.innerHTML +=userInfo.fatherName;
+    fathername.innerHTML += userInfo.fatherName;
 
     //____ create appending content into html page
     educations.forEach((education) => {
@@ -251,12 +253,83 @@ createCvButton.addEventListener("click" , function createCV(event) {
     form.style.display = "none";  //hidding form fields
     document.querySelector(".resume").style.display = "block";  // showing form fields
 
-    let name = document.querySelector(".user-name");
-    let headline = document.querySelector(".headline");
+    //____Selecting required fields in main resume
+    let names = [document.querySelector(".user-name"),document.querySelector(".name-append")];  //also select .name class
+    let headline = document.querySelector(".headline");  
     let summary = document.querySelector(".summary");
-    let age = document.querySelector(".age");
-    let email = document.querySelector(".email");
-    let phoneNumber = document.querySelector(".phonenumber");
-    let address = document.querySelector(".address");
-    let fatherName = document.querySelector(".fathername");
+    let age = document.querySelector(".age-append");
+    let email = document.querySelector(".email-append");
+    let phoneNumber = document.querySelector(".phonenumber-append");
+    let address = document.querySelector(".address-append");
+    let fatherName = document.querySelector(".fathername-append");
+
+    let educationSection = document.querySelector("#section-3");
+    let experienceSection = document.querySelector("#section-4");
+    let skillsList = document.querySelector(".skills-list");
+    let hobbiesList = document.querySelector(".hobbies-list");
+
+    console.log(names);
+    console.log(headline);
+    console.log(summary);
+    console.log(age);
+    console.log(email);
+    console.log(phoneNumber);
+    console.log(address);
+    console.log(fatherName);
+    console.log(educationSection);
+    console.log(experienceSection);
+    console.log(skillsList);
+    console.log(hobbiesList);
+/*
+     userInfo = {
+        userName: document.querySelector("#firstname").value + " " + document.querySelector("#lastname").value,
+        age: document.querySelector("#age").value,
+        fatherName: document.querySelector("#father-name").value,
+        email: document.querySelector("#email").value,
+        phoneNumber: document.querySelector("#phonenumber").value,
+        address: document.querySelector("#address").value,
+        profileHeadline:document.querySelector("#headline").value,
+        professionalSummary:document.querySelector("#professional-summary")
+    }
+ */
+console.log(info[0]);  // accessible
+
+    //_____ appending data to required fields in resume
+    names.forEach((name) => {
+        name.innerHTML += info[0].userName;
+    });
+
+    headline.innerHTML += info[0].profileHeadline;
+    summary.innerHTML += info[0].professionalSummary;  // fixed
+    age.innerHTML += info[0].age;
+    email.innerHTML += info[0].email;
+    phoneNumber.innerHTML += info[0].phoneNumber;
+    address.innerHTML += info[0].address;
+    fatherName.innerHTML += info[0].fatherName;
+
+    educations.forEach((education) => {
+        educationSection.innerHTML += `
+        <h2>${education.educationTitle}</h2>
+        <p>${education.educationSummary}</p>
+        <p><em>${education.educationTimestamp}</em></p>
+        `;
+    });
+
+    experiences.forEach((experience) => {
+        experienceSection.innerHTML += `
+        <h2>${experience.jobTitle}</h2>
+        <p>${experience.experienceSummary}</p>
+        <p><em>${experience.experienceTimestamp}</em></p>
+        `
+    });
+    skills.forEach((skill) => {
+        // skillsList.innerHTML += `<li>${skill}</li>`;
+        console.log(skill);
+    });
+    //____ an error is ocurring while accessing the data stored in skills array ilst fix that issue
+
+    hobbies.forEach((hobbie) => {
+        // hobbiesList.innerHTML += `<li>${hobbie}</li>`
+        console.log(hobbie);
+    });
 });
