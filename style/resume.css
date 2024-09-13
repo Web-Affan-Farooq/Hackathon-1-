@@ -32,6 +32,8 @@ body {
 
 section {
     padding: 15px;
+    width: 100%;
+    height: auto;
 }
 
 .personal-info {
@@ -55,12 +57,12 @@ section {
 } */
 .info-container { font-weight: bold;}
 
-.name,
-.sodo,
-.age,
-.email,
-.phonenumber,
-.address {
+.name-append,
+.fathername-append,
+.age-append,
+.email-append,
+.phonenumber-append,
+.address-append {
     width: auto;
     height: 40px;
     font-weight: normal;
