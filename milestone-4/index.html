@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hackathon milestone-4 | Editable resume</title>
+    <!--____StyleSheets_____-->
+    
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/button.css">
+</head>
+
+<body>
+    <div class="head">
+        <h1>Editable resume</h1>
+        <p>Fill out the form. You're required to have the following information below.</p>
+        <p>Atleast 5 relevant skills are required</p>
+        <p>Atleast 2 educations required</p>
+        <p>Atleast 2 experiences required</p>
+        <p>Add Atleast 3 suitable hobbies</p>
+        <p>Fill out each creadential carefully</p>
+        <p>Recheck your creadentials carefully below</p>
+        <button type="button" class="create-button">Create</button>
+    </div>
+    <div class="resume">
+        <!--____resume____-->
+            <br><br>
+    <section class="personal-info"> <!--____ personal information section ____-->
+        <input type="text" name="username" required value="Muhammad affan" class="user-name">
+        <br>
+        <input type="text" name="headline" required value="web Document" class="headline">
+    </section>
+
+    <div class="line"> <!-- ____professional summary head ____-->
+        <h1>Summary</h1>
+    </div>
+    <section class="section-1" id="section-1"> <!-- ____professional summary ____-->
+        <textarea name="professionalSummary" required
+            class="summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quaerat, consequatur corporis facilis at explicabo accusamus obcaecati deserunt temporibus, dolorem laborum voluptatum similique alias accusantium expedita officia quas dolores esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi at est sit consectetur impedit ipsum laboriosam ut atque blanditiis, voluptatem quos, fuga non eos fugit nostrum esse in perferendis quidem.></textarea>
+    </section>
+    <div class="line"> <!-- ____Personal information head ____-->
+        <h1>Personal Information</h1>
+    </div>
+    <section class="section-2" id="section-2">
+        <div class="info-container">Name: <input type="text" name="username" class="name-append" required
+                value="Muhammad affan"></div>
+        <br>
+        <div class="info-container">So/do: <input type="text" name="fathername" required class="fathername-append"
+                value="father name"></span></div>
+        <br>
+        <div class="info-container">Age: <input type="number" name="age" required value="10" class="age-append"></div>
+        <br>
+        <div class="info-container">email: <input type="email" name="email" required value="eample address@gmail.com"
+                class="email-append"></div>
+        <br>
+        <div class="info-container">Tel: <input type="text" name="phonenumber" required value="0000-0000000"
+                class="phonenumber-append"></span></div>
+        <br>
+        <div class="info-container">Address: <input type="text" name="address" required
+                value="yhfuyhduifyuidsyfuidsyfuiydsuifyuidyfuidsyfuiyuuiyuidyfiuydsiufy" class="address-append"></span>
+        </div>
+    </section>
+    <div class="line">
+        <h1>Education</h1>
+    </div>
+    <section class="section-3" id="section-3">
+        <div class="education-container">
+            <input type="text" name="educationTitle" required value="Education title">
+            <textarea>education summary Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, itaque excepturrepellat autem aliquid totam eius, quasi obcaecati explicabo quos corporis aspernatur non ullam ad,laudantium veritatis iste voluptas inventore!</textarea>
+            <input type="text" name="educationTimeLine" value="from 2021 to 2928" required>
+        </div>
+        <br>
+        <br>
+        <div class="education-container">
+            <input type="text" name="educationTitle" required value="Education title">
+            <textarea>education summary Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, itaque excepturrepellat autem aliquid totam eius, quasi obcaecati explicabo quos corporis aspernatur non ullam ad,laudantium veritatis iste voluptas inventore!</textarea>
+            <input type="text" name="educationTimeLine" value="from 2021 to 2928" required>
+        </div>
+    </section>
+    <div class="line">
+        <h1>Experience</h1>
+    </div>
+    <section class="section-4" id="section-4">
+        <div class="education-container">
+            <input type="text" name="experienceTitle" required value="experience title">
+            <textarea>education summary Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, itaque excepturrepellat autem aliquid totam eius, quasi obcaecati explicabo quos corporis aspernatur non ullam ad,laudantium veritatis iste voluptas inventore!</textarea>
+            <input type="text" name="experienceTimeLine" value="from 2021 to 2928" required>
+        </div>
+        <br><br>
+        <div class="education-container">
+            <input type="text" name="experienceTitle" required value="experience title">
+            <textarea>education summary Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, itaque excepturrepellat autem aliquid totam eius, quasi obcaecati explicabo quos corporis aspernatur non ullam ad,laudantium veritatis iste voluptas inventore!</textarea>
+            <input type="text" name="experienceTimeLine" value="from 2021 to 2928" required>
+        </div>
+    </section>
+    <div class="line">
+        <h1>Skills</h1>
+    </div>
+    <section class="section-5" id="section-5">
+        <button type="button" class="add-skill">Add skills</button>
+        <br><br>
+        <div class="skills-container"></div>
+    </section>
+    <div class="line">
+        <h1>Hobbies</h1>
+    </div>
+    <section class="section-6" id="section-6">
+        <button type="button" class="add-hobbie">Add hobbie</button>
+        <br><br>
+        <div class="hobbies-container"></div>
+    </section>
+    </div>
+
+    <!--____Scripts____-->
+    <script type="module" src="./dist/index.js"></script>
+</body>
+
+</html>
