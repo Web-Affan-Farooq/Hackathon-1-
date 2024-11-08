@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/resume.css">
+</head>
+<body>
+    <div class="container">
+        <div class="welcome"><!-- welcome section-->
+            <h1 class="main-head">Milestone 5 interactive resume builder</h1>
+            <br>
+            <br>
+            <p class="main-para">Create and generate your resume</p>
+            <br>
+            <br>
+            <button type="button" class="create-button btn-1">Create your own</button>
+        </div>
+
+        <div class="create-cv-section">
+            <br><br>
+            <h1 class="main-head">Create cv</h1>
+            <br>
+            <br>
+            <form action="" class="create-cv-form">
+                <fieldset>
+                    <legend>Personal Info</legend>
+                    <br>
+                    <input type="text" name="userName" id="user-name" placeholder="Enter your Full name" required class="input-1">
+
+                    <input type="email" name="userEmail" id="user-email" placeholder="Enter email" required class="input-1">
+
+                    <input type="tel" name="phoneNumber" id="phone" placeholder="Enter phonenumber " required class="input-1">
+
+                    <textarea name="profileHeadline" id="profile-headline" placeholder="Enter profile headline" class="input-2" required></textarea>
+
+                    <textarea name="professionalSummary" id="profile-summary" placeholder="Enter professional summary" class="input-2" required></textarea>
+
+                    <input type="text" name="linkedIn" id="linked-in" placeholder="Link to your linkedin profile" required class="input-1">
+
+                    <input type="text" name="address" id="address" placeholder="Home address" required class="input-1">
+                </fieldset>
+
+                
+                <fieldset>
+                    <legend>Educational Information</legend>
+                    <br>
+                    <h1 class="form-headings">For your Highest Educaion</h1>
+                    <br>
+                    <input type="text" name="educationTitle" id="education-1" placeholder="Enter your highest education" required class="input-1">
+                    <input type="text" name="educationTimeline" id="education-1-timeline" placeholder="Enter timeline" required class="input-1">
+                    <textarea name="educationDescription" id="highest-education-description" placeholder="Enter education description" class="input-2" required></textarea>
+                    <br>
+                    <h1 class="form-headings">For your Second Highest Educaion</h1>
+                    <br>
+                    <input type="text" name="educationTitle" id="education-2" placeholder="Enter your second highest education" required class="input-1">
+                    <input type="text" name="educationTimeline" id="education-2-timeline" placeholder="Enter timeline" required class="input-1">
+                    <textarea name="educationDescription" id="highest-education-description" placeholder="Enter education description" class="input-2" required></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Experience Information</legend>
+                    <br>
+                    <h1 class="form-headings">For your Best Experiences</h1>
+                    <br>
+                    <input type="text" name="jobTitle" id="job-1" placeholder="Enter your job" required class="input-1">
+                    <input type="text" name="jobTimeline" id="job-1-timeline" placeholder="Enter timeline" required class="input-1">
+                    <textarea name="jobDescription" id="job-description-1" placeholder="Enter job description" class="input-2" required></textarea>
+                    <br>
+                    <h1 class="form-headings">Another experience (if any) or leave it</h1>
+                    <br>
+                    <input type="text" name="jobTitle" id="job-2" placeholder="Enter another experience" required class="input-1">
+                    <input type="text" name="jobTimeline" id="job-2-timeline" placeholder="Enter timeline" required class="input-1">
+                    <textarea name="jobDescription" id="job-description-2" placeholder="Enter description" class="input-2" required></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your Skills</legend>
+                    <br>
+                    <div class="skills-form"></div><!--skills container-->
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your Profile</legend>
+                    <br>
+                    <br>
+                   <input type="file" name="person" id="person">
+                </fieldset>
+
+                <div class="custom-section-container"> <!-- custom section fields are appended here-->
+
+                </div>
+                <div class="button-container">
+                    <button type="submit" class="btn-2">Generate Resume</button>
+                    <button type="button" class="add-skills-button btn-2">Add Skills</button>
+                </div>
+            </form>
+        </div>
+        <!-- resume section -->
+
+
+        <div class="resume">
+            <div class="profile"><img src="https://i.pinimg.com/236x/c6/3b/b0/c63bb04107a4fad29a0b28e136621f3a.jpg" alt="profile image" class="user-profile"/></div>
+            <br><br>
+            <section class="personal-info"> <!--____ personal information section ____-->
+                <h1 class="user-name">Muhammad affan</h1>
+                <br>
+                <br>
+                <h3><a href="/" class="headline"><!--dynamic headline--></a></h3>
+            </section>
+            <br>
+            <br>
+            <div class="line" bgcolor="#5f9ea0"> <!-- ____professional summary head ____-->
+                <h1>Summary</h1>
+            </div>
+            <br>
+            <section class="section-1" id="section-1"> <!-- ____professional summary ____-->
+                <p class="summary"><!--dynamic summary--></p>
+            </section>
+            <br>
+            <br>
+            <div class="line" bgcolor="#5f9ea0"> <!-- ____Personal information head ____-->
+                <h1>Personal Information</h1>
+            </div>
+            <section class="section-2" id="section-2">
+                <div class="info-container">Name: <span class="name"><!--dynamic name--></span></div>
+                <br>
+                <div class="info-container">email: <span class="email"><!--dynamic email--></span></div>
+                <br>
+                <div class="info-container">Tel: <span class="phonenumber"><!--dynamic phonenumber--></span></div>
+                <br>
+                <div class="info-container">Address: <span class="address"><!--dynamic phonenumber--></span></div>
+            </section>
+            <br><br>
+            <div class="line" bgcolor="#5f9ea0">
+                <h1>Education</h1>
+            </div>
+            <section class="section-3" id="section-3"><!--Education should be added here--></section>
+            <br><br>
+            <div class="line" bgcolor="#5f9ea0">
+                <h1>Experience</h1>
+            </div>
+            <section class="section-4" id="section-4"><!--Experience should be added here--></section>
+            <br><br>
+            <div class="line" bgcolor="#5f9ea0">
+                <h1>Skills</h1>
+            </div>
+            <section class="section-5" id="section-5">
+                <ul class="skills-list">
+                    <!--dynamic skills list items-->
+                </ul>
+            </section>
+            <button type="button" class="cv-download-button btn-2">Download CV</button>
+        </div>
+    </div>
+    <script type="module" src="./dist/index.js"></script>
+</body>
+</html>
